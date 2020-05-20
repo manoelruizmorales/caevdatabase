@@ -69,14 +69,6 @@
     <Build Include="dbo\Tables\EstadoAnaliticoActivo.sql" />
     <Build Include="dbo\Tables\EstadoSituacionFinanciera.sql" />
     <Build Include="dbo\Tables\EstadoVariacionHacienda.sql" />
-    <Build Include="dbo\Stored Procedures\GetUserId.sql" />
-    <Build Include="dbo\Stored Procedures\GetUserInfo.sql" />
-    <Build Include="dbo\Stored Procedures\DevuelveSentenciaSQL.sql" />
-    <Build Include="dbo\Stored Procedures\spObtenerListaBases.sql" />
-    <Build Include="dbo\Stored Procedures\spCrearUsuario.sql" />
-    <Build Include="dbo\Stored Procedures\spUpdateUsuario.sql" />
-    <Build Include="dbo\Stored Procedures\spDeleteUsuario.sql" />
-    <Build Include="dbo\Stored Procedures\BitacoraInsert.sql" />
     <Build Include="dbo\Stored Procedures\spGeneraBalanza.sql" />
     <Build Include="dbo\Stored Procedures\spBalanza.sql" />
     <Build Include="dbo\Stored Procedures\spGeneraEstadoActividades.sql" />
@@ -88,5 +80,12 @@
     <Build Include="dbo\Stored Procedures\spEstadoCambiosSituacionFinanciera.sql" />
     <Build Include="dbo\Stored Procedures\spGeneraEstadoVariacionHacienda.sql" />
     <Build Include="dbo\Stored Procedures\spEstadoVariacionHacienda.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\120\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\120\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
+    </ArtifactReference>
   </ItemGroup>
 </Project>
